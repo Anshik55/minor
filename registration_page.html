@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    <script src="./js/registration_page.js"></script>
+</head>
+
+<link rel="stylesheet" href="./css/registration_page.css" />
+
+<body style="background-image: url('./images/booksImg.jpg'); background-size:auto; background-repeat:no-repeat">
+
+    <div class="registrationClass">
+
+        <form class="registrationForm" id="registrationForm">
+            <h2 id="heading1"><b>User Registration</b></h2>
+
+            <div class="userDetails">
+
+                <input type="text" placeholder="Name" onblur="fnamevalidate()" id="fName" required/>
+                <input type="text" placeholder="Email ID" onblur="emailvalidate()" id="emailID" required/>
+                <input type="text" placeholder="User Name" onblur="uservalidate()" id="username" required/>
+                <input type="password" placeholder="Password" onblur="passvalidate()" id="pass" required/>
+                <input type="password" placeholder="Confirm Password" onblur="passconfirm()" id="cnfrmPass" required/>
+
+                <button type="submit" formaction="./login_page.html" onclick="check1()">Submit</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
